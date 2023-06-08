@@ -1,3 +1,10 @@
+import os
+
+from ibm_watson import LanguageTranslatorV3
+from deep_translator import MyMemoryTranslator
+from ibm_cloud_sdk_core.authenticators import IAMAuthenticator
+from dotenv import load_dotenv
+
 from machinetranslation import translator
 from flask import Flask, render_template, request
 import json
